@@ -1,0 +1,67 @@
+resumeSchema
+POST : http://localhost:6000/api/resumes
+
+
+{
+  "userId": "614bc2139a79055e90a4d6aa",
+  "personalInfo": {
+    "fullName": "John Doe",
+    "email": "john.doe@example.com",
+    "phone": "123-456-7890",
+    "address": "123 Main Street, Cityville"
+  },
+  "education": [
+    {
+      "institute": "University of Example",
+      "degree": "Bachelor of Science",
+      "startDate": "2018-09-01",
+      "endDate": "2022-05-01"
+    }
+    // Add more education details as needed
+  ],
+  "workExperience": [
+    {
+      "company": "Tech Solutions Inc.",
+      "position": "Software Engineer",
+      "startDate": "2022-06-01",
+      "endDate": "2023-12-31"
+    }
+    // Add more work experience details as needed
+  ],
+  "skills": ["JavaScript", "React", "Node.js"],
+  "projects": [
+    {
+      "title": "Project A",
+      "description": "Developed a web application using React and Node.js"
+    }
+    // Add more project details as needed
+  ],
+  "certifications": [
+    {
+      "title": "Certification X",
+      "authority": "Certification Authority"
+    }
+    // Add more certification details as needed
+  ],
+  "languages": ["English", "Spanish"],
+  "hobbies": ["Reading", "Traveling"],
+  "references": [
+    {
+      "name": "Reference Name",
+      "reference": "Reference description or contact details"
+    }
+    // Add more reference details as needed
+  ]
+  // Add more sections as needed
+}
+
+
+user Schema:
+
+POST: http://localhost:6000/api/auth/register
+
+{
+    "username": "pratyusha ravilla",
+    "email": "pratyusha123@gmail.com",
+    "password": "pratyusha@123"
+}

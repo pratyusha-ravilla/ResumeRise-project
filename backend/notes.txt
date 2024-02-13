@@ -1,0 +1,62 @@
+resume-builder/
+├── backend/
+│   ├── database/
+│   │   └── dbconnection.js
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   ├── resumeRoutes.js
+│   │   └── userRoutes.js
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── resumeController.js
+│   │   └── userController.js
+│   ├── models/
+│   │   ├── Resume.js
+│   │   └── User.js
+│   ├── middleware/
+│   ├── server.js
+│   └── .env
+└── frontend/
+    ├── components/
+    ├── pages/
+    │   ├── Login.js
+    │   ├── Register.js
+    │   ├── Homepage.js
+    │   └── Dashboard.js
+    ├── api/
+    │   ├── authApi.js
+    │   ├── resumeApi.js
+    │   └── userApi.js
+    ├── utils/
+    ├── assets/
+    ├── App.js
+    ├── index.js
+    └── .env
+
+
+
+    frontend/
+├── components/
+│   ├── LoginForm.js
+│   ├── RegisterForm.js
+│   ├── HomePage.js
+│   └── Dashboard.js
+├── pages/
+│   ├── Login.js
+│   ├── Register.js
+│   ├── HomePage.js
+│   └── Dashboard.js
+├── api/
+│   ├── authApi.js
+│   ├── resumeApi.js
+│   └── userApi.js
+├── utils/
+│   ├── authUtils.js
+│   ├── resumeUtils.js
+│   └── userUtils.js
+├── assets/
+│   ├── images/
+│   └── styles/
+├── App.js
+├── index.js
+└── .env
