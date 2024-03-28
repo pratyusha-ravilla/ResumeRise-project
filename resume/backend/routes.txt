@@ -1,0 +1,76 @@
+Postman routes for the provided MERN Stack resume builder backend routes:
+
+Register a new user:
+
+HTTP Method: POST
+URL: http://localhost:8000/api/auth/register
+Headers: Content-Type: application/json
+Body: Raw JSON
+
+{
+    "username": "example_username",
+    "email": "example@example.com",
+    "password": "example_password"
+}
+
+
+Login user:
+
+HTTP Method: POST
+URL: http://localhost:8000/api/auth/login
+Headers: Content-Type: application/json
+Body: Raw JSON
+
+{
+    "email": "example@example.com",
+    "password": "example_password"
+}
+
+
+Get all resumes:
+
+HTTP Method: GET
+URL: http://localhost:8000/api/resumes
+
+
+Get a single resume by ID:
+
+HTTP Method: GET
+URL: http://localhost:8000/api/resumes/:id
+Replace :id with the ID of the resume you want to retrieve.
+
+
+Create a new resume:
+
+HTTP Method: POST
+URL: http://localhost:8000/api/resumes
+Headers: Content-Type: application/json, Authorization: Bearer [JWT_TOKEN]
+Body: Raw JSON
+
+{
+    "title": "Example Resume",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+}
+
+Update a resume by ID:
+
+HTTP Method: PUT
+URL: http://localhost:8000/api/resumes/:id
+Replace :id with the ID of the resume you want to update.
+Headers: Content-Type: application/json, Authorization: Bearer [JWT_TOKEN]
+Body: Raw JSON
+
+{
+    "title": "Updated Resume Title",
+    "content": "Updated resume content goes here."
+}
+
+
+Delete a resume by ID:
+
+HTTP Method: DELETE
+URL: http://localhost:8000/api/resumes/:id
+Replace :id with the ID of the resume you want to delete.
+Headers: Authorization: Bearer [JWT_TOKEN]
+
+Replace [JWT_TOKEN] with the actual JWT token obtained after successful user login.
