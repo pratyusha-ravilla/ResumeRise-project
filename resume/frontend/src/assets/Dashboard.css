@@ -1,0 +1,40 @@
+/* Dashboard.css */
+
+.dashboard-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dashboard-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.dashboard-options {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-options li {
+  margin-bottom: 10px;
+}
+
+.dashboard-options li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.dashboard-options li a:hover {
+  color: #007bff;
+}
+
+.profile-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+
